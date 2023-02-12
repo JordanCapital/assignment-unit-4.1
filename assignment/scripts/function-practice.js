@@ -20,3 +20,21 @@ function helloName( name ) {
 // Remember to call the function to test
   let greetings = helloName("Jordan");
   console.log(greetings);
+
+
+// 3. Function to add two numbers together & return the result
+function addNumbers( firstNumber, secondNumber ) {
+  return firstNumber + secondNumber;
+  // return firstNumber + secondNumber;
+}
+let total = addNumbers(5, 9);
+console.log(total);
+
+
+// 4. Function to multiply three numbers & return the result
+function multiplyThree(firstNumber, secondNumber, thirdNumber ){
+ return firstNumber * secondNumber * thirdNumber;
+}
+
+let result = multiplyThree(10, 8, 15);
+console.log(result);
