@@ -114,3 +114,52 @@ console.log(includeResult);
 
 includeResult = find(0, [1, 2, 3, 4, 5, 6]);
 console.log(includeResult);
+
+// ----------------------
+// Stretch Goals
+// ----------------------
+// 8. Function to check if a letter is the first letter in a 
+//    string. Return true if it is, and false otherwise
+function isFirstLetter(letter, string) {
+  return string[0] === letter;
+}
+console.log( 'isFirstLetter - should say true', isFirstLetter('a', 'apple') );
+console.log( 'isFirstLetter - should say false', isFirstLetter('z', 'apple') );
+
+// 9. Function to return the sum of all numbers in an array
+function sumAll( numbers) {
+  let sum = 0
+    // TODO: loop to add items
+  for (let i = 0; i < numbers.length; i++){
+    sum += numbers[i];
+  }
+  return sum;
+}
+console.log(sumAll([1, 3, 9, 8, 10]));
+
+// 10. Function to return a new array of all positive (greater than zero)
+//     numbers contained in an input array. If there are no positive numbers
+//     return an empty array. Note: The input array should not change.
+function positiveArray(numbers){
+  return numbers.filter(number => number > 0);
+}
+let numbers = [-9, -6, 0, 1, 8, 3, -7, 10, -22];
+let arrayNumbers = positiveArray(numbers);
+console.log(arrayNumbers);
+console.log(numbers);
+
+
+// 11. Pick a problem from Edabit(https://edabit.com/) or 
+//     CodeWars(https://www.codewars.com/). Then describe it 
+//     here in a comment, write the function, and test it!
+// Instructions: Write a function that accets an array of 10 integers(between 0 and 9)
+// that returns a string of those numbers in the form of a phone number.
+  function createPhoneNo(numbers){
+    var format = "(xxx) xxx-xxxx";
+    for(var i = 0; i < numbers.length; i++){
+      format = format.replace('x', numbers[i]);
+    }
+    return format;
+  }
+  var number = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+  console.log(`The contact is:${createPhoneNo(number)}`);
