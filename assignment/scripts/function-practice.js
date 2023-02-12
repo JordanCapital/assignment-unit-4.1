@@ -38,3 +38,20 @@ function multiplyThree(firstNumber, secondNumber, thirdNumber ){
 
 let result = multiplyThree(10, 8, 15);
 console.log(result);
+
+
+// 5. Function that will return true if a number is positive, 
+//    or greater than zero, and false otherwise
+function isPositive( number ) {
+  if ( number > 0 ){
+    return true;
+  } 
+  else {
+    return false;
+  }
+}
+let positiveResult = isPositive(10);
+console.log(positiveResult);
+
+negativeResult = isPositive(-2);
+console.log(negativeResult);
